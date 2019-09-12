@@ -19,7 +19,7 @@ def consolidate_cart(cart)
 def apply_coupons(cart, coupons)
  coupons.each do |coupon|
    item = coupon[:item]
-   if cart.has_key?(item) 
+   if cart.has_key?(item)
      if cart[item][:count] >= coupon[:num]
        if cart["#{item} W/COUPON"]
         cart["#{item} W/COUPON"] = 
