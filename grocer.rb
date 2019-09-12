@@ -50,6 +50,9 @@ def checkout(array, coupons)
   applied_coupons = apply_coupons(hash_cart, coupons)
   discounts = apply_clearance(applied_coupons)
   total = 0 
+  discounts.each do |item| 
+binding.pry
+end
   
-binding.pry 
+ 
 end
