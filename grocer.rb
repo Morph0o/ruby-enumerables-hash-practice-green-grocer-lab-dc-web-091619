@@ -50,3 +50,4 @@ def checkout(array, coupons)
   applied_coupons = apply_coupons(hash_cart, coupons)
   discounts = apply_clearance(applied_coupons)
 binding.pry 
+end
