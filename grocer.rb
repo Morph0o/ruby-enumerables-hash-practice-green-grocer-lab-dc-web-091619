@@ -50,7 +50,7 @@ def checkout(array, coupons)
   applied_coupons = apply_coupons(hash_cart, coupons)
   discounts = apply_clearance(applied_coupons)
   total = discounts.reduce(0) { |acc| (key,value)| acc += value[:price] * value[:count] }
-  discounts.each do |key,value| 
+  total 
 binding.pry
 end
   
